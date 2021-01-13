@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Demo</title>
+			<link rel="stylesheet" href="style.css">
+			<script src="https://kit.fontawesome.com/d7b1c28ef0.js" crossorigin="anonymous"></script>
+		</title>
+		<style type="text/css">
+			select{
+				font-size: 20px;
+				width: 100%;
+				outline: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="website-name"><b>Demo&#x2e;com</b></div>
+			<div class="menu">
+				<ul class="nav-menu">
+					<li><button class="btn nav-btn home-button"><a href="./index.html" style="color:#fefefa;">HOME</a></button></li>
+				</ul>
+			</div>
+		</div>
+		<div class="form demo-form" style="margin: 80px">
+			<form action="" class="Item-details">
+				<table>
+					<tbody>
+						<tr><td class="sub-head"><b>Product Details</b></td></tr>
+						<tr>
+							<td><label for="prod-name"><b>Product Name</b></label></td>
+							<td><input type="text" name="prod-name"></td>
+						</tr>
+						<tr>
+							<td><label for="category"></label><b>Category</b></td>
+							<td><select name="category">
+								<option value="Select">Select</option>
+								<option value="Electronic Devices">Electronic Devices</option>
+								<option value="Books">Books</option>
+								<option value="Clothing">Clothing</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td><label for="brand"></label><b>Brand</b></td>
+							<td><input type="text" name="brand"></td>
+						</tr>
+						<tr>
+							<td><label for="price"></label><b>Price</b></td>
+							<td><input type="text" name="price" pattern="\d{1,5}"  data-type="currency" placeholder="₹100"></td>
+						</tr>
+						<tr>
+							<td><label><b>Status</b></label></td>
+							<td style="display: flex; margin:5px; "><label for="new"><b>new</b></label><input type="radio" name="status">
+							<label for="used"><b>used</b></label><input type="radio" name="status"></td>
+						</tr>
+						<tr>
+							<td><label for="date"><b>Publish Date</b></label></td>
+							<td><input type="date" name="date" value=""></td>
+						</tr>
+						<tr>
+							<td><label for="quantity"><b>Quantity</b></label></td>
+							<td><input type="number" min="1" value="1" name="quantity"></td>
+						</tr>
+						<tr>
+							<td><label for="add-det"></label><b>Additional Details</b></td>
+							<td><textarea name="add-det" rows="2" ></textarea></td>
+						</tr>
+						<tr>
+							<td><label for="prod-image"></label><b>Product  Image</b></td>
+							<td><input type="file" name="prod-image"></td>
+						</tr>
+						<tr></tr>
+						<tr><td class="sub-head"><b>Your Details</b></td></tr>
+						<tr>
+							<td><label for="name"><b>Name</b></label></td>
+							<td><input type="text" name="name"></td>
+						</tr>
+						<tr>
+							<td><label for="contact"><b>Contact No</b></label></td>
+							<td><input type="text" name="contact"></td>
+						</tr>
+						<tr><td><button type="submit" class="btn demo-submit-btn"><b>Submit</b></button></td></tr>
+					</tbody>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>
