@@ -4,18 +4,56 @@ body{
 	color: white;
 	margin: 0px;
 }
+
+
+ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+button:focus { outline: none; }
+select:focus { outline: none; }
+input:focus {outline: none;}
+a{
+	text-decoration: none;
+	color: #87cefa;
+}
+input{
+	font-size: 20px;
+	background-color: #363636;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom-color: white;
+	border-bottom-width: 1px;
+	color: white;
+}
+
+
+
+.btn{
+	color: white;
+	text-decoration: none;
+	border: none;
+	background-color:#363636;
+	border: none;
+	outline:none;
+}
+.center{
+	display: flex;
+  	justify-content: center;
+  	margin:110px 0px;
+
+}
+
+
+
 .website-name{
 	font-size: 60px;
 	color: #fefefa;
 	padding: 5px;
 	float: left;
 	overflow: hidden;
-
-}
-.center{
-	display: flex;
-  	justify-content: center;
-  	margin:110px 0px;
 
 }
 .navbar{
@@ -33,26 +71,6 @@ body{
 	position: relative;
 	display: flex;
 }
-ul{
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
-}
-button:focus { outline: none; }
-select:focus { outline: none; }
-input:focus {outline: none;}
-a{
-	text-decoration: none;
-	color: #87cefa;
-}
-.btn{
-	color: white;
-	text-decoration: none;
-	border: none;
-	background-color:#363636;
-	border: none;
-	outline:none;
-}
 .nav-btn{
 	font-size: 20px;
 	margin: 0px;
@@ -64,6 +82,9 @@ a{
 	background-color: #555555;
 	outline: 1px solid #757575;
 }
+
+
+
 .login-signup{
 	color: white;
 	width: 400px;
@@ -83,16 +104,6 @@ a{
 	text-align: center;
 	font-size: 30px;
 	padding: 10px; 
-}
-input{
-	font-size: 20px;
-	background-color: #363636;
-	border-top: none;
-	border-right: none;
-	border-left: none;
-	border-bottom-color: white;
-	border-bottom-width: 1px;
-	color: white;
 }
 input[class=log-sign]{
 	width: 80%;
@@ -129,11 +140,17 @@ input[class=log-sign]{
 	margin-right: 10%;
 	margin-left: 10%; 
 }
+
+
+
+
+
 .content{
 	margin-top: 80px;
 	position: relative;
 	overflow: hidden;
 }
+
 .side-navbar{
 	background-color: #000;
 	opacity: 0.6; 
@@ -178,6 +195,10 @@ input[class=log-sign]{
 	margin: 0px;
 }
 
+
+
+
+
 .products{
 	float: right;
 	display: flex;
@@ -211,11 +232,28 @@ input[class=log-sign]{
 	color: #fefefa;
 	background-color: #757575;
 }
+.item .item-det div{
+	padding: 10px;
+	font-size: 20px;
+}
+.prod-more-btn{
+	align-content:center;
+	margin: auto;
+	padding: 15px;
+	width: 60%;
+	background-color: #555555;
+	border-radius: 10px;
+	
+}
 .prod-img{
 	padding: 0px;
 	height: 100%;
 	width: 100%;
 }
+
+
+
+
 .demo-form form{
 	width: 35%;
 	margin: auto;
@@ -255,6 +293,11 @@ textarea{
 	background-color: rgb(0,0,0,0);
 	color: white;
 }
+
+
+
+
+
 .contact{
 	position: relative;
 	bottom: 0;
@@ -283,6 +326,11 @@ textarea{
 .contact i{
 	font-size: 35px;
 }
+
+
+
+
+
 ::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
