@@ -10,33 +10,24 @@
 		<div class="navbar">
 			<div class="website-name"><b>Demo&#x2e;com</b></div>
 			<ul class="nav-menu">
-				<li><button class="btn nav-btn demo-button"><a href="./demo.html" style="color:#fefefa;">ADD ITEM</a></button></li>
-				<li><button class="btn nav-btn home-button"><a href="#contact" style="color:#fefefa;">CONTACT</a></button></li>
-				<li><button class="btn nav-btn login-btn"><a href="./login.html" style="color:#fefefa;">LOGIN</a></button></li>
+				<li><a href="./demo.html" style="color:#fefefa;"><button class="btn nav-btn demo-button">ADD ITEM</button></a></li>
+				<li><a href="#contact" style="color:#fefefa;"><button class="btn nav-btn home-button">CONTACT</button></a></li>
+				<li><a href="./login.html" style="color:#fefefa;"><button class="btn nav-btn login-btn">LOGIN</button></a></li>
 				<li><button class="btn nav-btn search-btn"> <i class="fas fa-search"></i></button></li>
 			</ul>
+			<div class="dropdown-nav-menu">
+				<button class="btn nav-btn dropdown-btn"><i class="fas fa-bars"></i></button>
+				<div class="dropdown-content">
+					<ul>
+						<li><a href="./demo.html" style="color:#fefefa;"><button class="btn nav-btn demo-button">ADD ITEM</button></a></li>
+						<li><a href="#contact" style="color:#fefefa;"><button class="btn nav-btn home-button">CONTACT</button></a></li>
+						<li><a href="./login.html" style="color:#fefefa;"><button class="btn nav-btn login-btn">LOGIN</button></a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 		<div class="content">
-			<div class="side-navbar">
-				<div class="filter-head">Filter</div>
-				<ul>
-					<li class="filter">
-						<label for="price"><b>Price (100-100000)</b></label> 
-						<br> 
-						<input type="range" name="price" min="100" max="100000">
-					</li>
-					<li class="filter">
-						<label for="cat"><b>Category</b></label>
-						<ul>
-							<li><input type="checkbox" name="cat"><p> Electronic Devices</p></li>
-							<li><input type="checkbox" name="cat"><p> Books</p></li>
-							<li><input type="checkbox" name="cat"><p> Clothing</p></li>
-							<li><input type="checkbox" name="cat"><p> Sports</p></li>
-						</ul>
-					</li>
-				</ul>
-				
-			</div>
+			
 			<div class="products">
 				<div class="item">
 					<div class="item-image">
@@ -82,6 +73,17 @@
 						<div class="prod-more" style="text-align: center;"><button class="btn prod-more-btn">MORE</button></div>
 					</div>
 				</div>
+				<div class="item">
+					<div class="item-image">
+						<img src="https://images.unsplash.com/photo-1549122728-f519709caa9c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8Ym9va3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="prod-img">
+						<p>Added By</p>
+					</div>
+					<div class="item-det">
+						<div class="prod-name">Product Name</div>
+						<div class="prod-cat">Category</div>
+						<div class="prod-more" style="text-align: center;"><button class="btn prod-more-btn">MORE</button></div>
+					</div>
+				</div>
 				
 				
 			</div>
@@ -93,8 +95,8 @@
 				For requests, information or comments, please contact below.
 				<br>
 				<br>
-				<b style="padding: 20px; font-size: 20px;">Call.	</b> 9999000008 / 9999000009<br>
-				<b style="padding: 20px; font-size: 20px;">Mail.	</b> demo@gmail.com<br><br>
+				<b style="padding: 0; font-size: 20px;">Call.	 9999000008 / 9999000009 </b>
+				<b style="padding: 0; font-size: 20px;">Mail.	 demo@gmail.com</b><br>
 			</div>
 			<div class="social-media">
 				<i class="fa fa-facebook-official w3-hover-opacity"></i>
