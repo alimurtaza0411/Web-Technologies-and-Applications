@@ -27,7 +27,6 @@ input{
 }
 
 
-
 .btn{
 	color: white;
 	text-decoration: none;
@@ -211,11 +210,14 @@ input[class=log-sign]{
 	width: 100%;
 }
 
-
+.error{
+	color: red;
+	font-size: 13px;
+}
 
 
 .demo-form form{
-	width: 47%;
+	width: 450px;
 	margin: auto;
 	justify-content: center;
 }
@@ -237,6 +239,7 @@ input[class=log-sign]{
 	padding: 15px;
 }
 .demo-form table {
+	width: 100%;
     border-collapse: separate;
     border-spacing: 0 2.5vw;
 }
@@ -283,9 +286,6 @@ textarea{
 .contact i{
 	font-size: 35px;
 }
-
-
-
 
 
 ::-webkit-calendar-picker-indicator {
