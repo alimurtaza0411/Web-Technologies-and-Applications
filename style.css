@@ -166,7 +166,7 @@ input[class=log-sign]{
 	overflow: hidden;
 }
 .bannar1{
-	height:320px;
+	height:350px;
 	background-color:white;
 	display:  flex;
 	flex-direction: column;
@@ -191,12 +191,10 @@ input[class=log-sign]{
 	cursor: pointer;
 	height: fit-content;
 }
-.ban .right-arrow{
-	
-}
 
 .timer{
 	width: 30%;
+	height: fit-content;
 	margin: auto;
 }
 .timer-head{
