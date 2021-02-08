@@ -25,7 +25,9 @@ input{
 	border-bottom-color: white;
 	border-bottom-width: 1px;
 }
-
+img{
+	image-rendering: -moz-crisp-edges;
+}
 
 .btn{
 	color: white;
@@ -164,41 +166,38 @@ input[class=log-sign]{
 	overflow: hidden;
 }
 .bannar1{
-	height:550px;
-	position: relative;
+	height:320px;
+	background-color:white;
+	display:  flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .bannar1 .background{
-	width: 100%;
-	height: 100%;
+	width: 400px;
+	height: 400px;
+	margin: auto;
 }
-.ban .left-arrow{
-	position:absolute;
-	top: 40%;
-	bottom: 40%;
+.ban .arr{
+	position: absolute;
+	display:flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.ban .arrow{
+	position:relative;
 	font-size: 50px;
 	font-weight: bolder;
 	color: black;
 	cursor: pointer;
+	height: fit-content;
 }
 .ban .right-arrow{
-	position:absolute;
-	right: 0%;
-	top: 40%;
-	bottom: 40%;
-	font-size: 50px;
-	font-weight: bolder;
-	color: black;
-	cursor: pointer;
+	
 }
 
 .timer{
-	overflow: visible;
-	position: absolute;
 	width: 30%;
-	height: 20%;
-	bottom: 1%;
-	left: 35%;
-	right: 35%;
+	margin: auto;
 }
 .timer-head{
 	display: flex;
