@@ -163,7 +163,75 @@ input[class=log-sign]{
 .content{
 	overflow: hidden;
 }
+.bannar1{
+	height:550px;
+	position: relative;
+}
+.bannar1 .background{
+	width: 100%;
+	height: 100%;
+}
+.ban .left-arrow{
+	position:absolute;
+	top: 40%;
+	bottom: 40%;
+	font-size: 50px;
+	font-weight: bolder;
+	color: black;
+	cursor: pointer;
+}
+.ban .right-arrow{
+	position:absolute;
+	right: 0%;
+	top: 40%;
+	bottom: 40%;
+	font-size: 50px;
+	font-weight: bolder;
+	color: black;
+	cursor: pointer;
+}
 
+.timer{
+	overflow: visible;
+	position: absolute;
+	width: 30%;
+	height: 20%;
+	bottom: 1%;
+	left: 35%;
+	right: 35%;
+}
+.timer-head{
+	display: flex;
+	justify-content: center;
+	font-size: 25px;
+	padding: 5px;
+}
+.time{
+	display: flex;
+	justify-content: center;
+	
+}
+.timer-class{
+	display: flex;
+	justify-content: center;
+}
+.timer-class div{
+	padding: 7px;
+	color: #363636;
+}
+.time-blk{
+	display: block;
+	font-size: 30px;
+	color: black;
+	background-color:red;
+	padding: 5px;
+	border-radius: 5px;
+}
+.timer b{
+	font-size: xx-large;
+	color: #363636;
+
+}
 .products{
 	float: right;
 	display: flex;
@@ -317,5 +385,10 @@ textarea{
 @media screen and (max-width: 450px){
 	.demo-form form {
 		width: 100%;
+	}
+	.timer{
+		width: 100%;
+		left: 0%;
+		right: 0%;
 	}
 }

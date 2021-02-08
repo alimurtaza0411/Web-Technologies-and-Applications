@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="style.css">
 		<script src="https://kit.fontawesome.com/d7b1c28ef0.js" crossorigin="anonymous"></script>
 	</head>
-	<body>
+	<body onload="updateTimer()">
 		<div class="navbar">
 			<div class="website-name"><b>Demo&#x2e;com</b></div>
 			<ul class="nav-menu">
@@ -27,6 +27,32 @@
 			</div>
 		</div>
 		<div class="content">
+			<div class="slider">
+				<div class=" ban bannar1" >
+
+					<img class="background" src="./img/5.png" alt="">
+					<div class="timer">
+						<div class="timer-head" style="color: black;">
+							Time Left
+						</div>
+						<div class="time">
+							<div id="day" class="timer-day time-blk"></div><b>:</b>
+							<div id="hour" class="timer-hour time-blk"></div><b>:</b>
+							<div id="min" class="timer-min time-blk"></div><b>:</b>
+							<div id="sec" class="timer-sec time-blk"></div>
+						</div>
+						<div class="timer-class">
+							<div class="time-day ">Days </div>
+							<div class="time-hour">Hours </div>
+							<div class="time-min">Min </div>
+							<div class="time-sec">Sec </div>
+						</div>
+					</div>
+					<div class="left-arrow" >&lt</div>
+					<div class="right-arrow" >&gt</div>
+
+				</div>
+			</div>
 			
 			<div class="products">
 				<div class="item">
@@ -105,5 +131,6 @@
 				<i class="fa fa-twitter w3-hover-opacity"></i>
 			</div>
 		</div>
+		<script src="script.js"></script>
 	</body>
 </html>

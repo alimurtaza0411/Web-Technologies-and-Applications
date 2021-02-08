@@ -46,3 +46,14 @@ function check(f){
     }
     return false;
 }
+var endDate = new Date("Jan 01, 2022 00:00:00")
+function updateTimer(){
+    var now = new Date();
+    var rem = endDate-now;
+    document.getElementById('day').innerHTML = Math.floor(rem / (1000 * 60 * 60 * 24));
+    document.getElementById('hour').innerHTML = Math.floor((rem % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    document.getElementById('min').innerHTML = Math.floor((rem  % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById('sec').innerHTML = Math.floor((rem  % (1000 * 60)) / 1000);
+    setInterval(updateTimer,1000);
+
+}
