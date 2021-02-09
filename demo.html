@@ -54,29 +54,35 @@
 							</td>
 						</tr>
 						<tr>
-							<td><label for="price"></label><b>Price*</b></td>
-							<td>
-								<div style="display: flex;">₹<input type="text" name="price"   data-type="currency" placeholder="100000"></div>
-								<div id="demo-price-error" class= "error"> </div>
-							</td>
-						</tr>
-						<tr>
 							<td><label><b>Status*</b></label></td>
 							<td ><div style="display: flex; margin:5px; "><div style="padding: 0px 15px;"><label for="new"><b>new</b></label><input type="radio" name="status" checked></div>
 							<div style="padding: 0px 15px;"><label for="used"><b>used</b></label><input type="radio" name="status"></div><div id="demo-status-error" class= "error"> </div></div></td>
 						</tr>
 						<tr>
-							<td><label for="date"><b>Publish Date*</b></label></td>
+							<td><label for="date"><b>Release Date*</b></label></td>
 							<td>
 								<input type="date" name="date" value="">
 								<div id="demo-date-error" class= "error"> </div>
 							</td>
 						</tr>
 						<tr>
+							<td><label for="price"></label><b>Price*</b></td>
+							<td>
+								<div style="display: flex;">₹<input id="demo-price" type="text" name="price"   data-type="currency" placeholder="100000"></div>
+								<div id="demo-price-error" class= "error"> </div>
+							</td>
+						</tr>
+						<tr>
 							<td><label for="quantity"><b>Quantity*</b></label></td>
 							<td>
-								<input type="number" min="1" value="1" name="quantity">
+								<input id="demo-quantity" type="number" min="1" value="1" name="quantity">
 								<div id="demo-quantity-error" class= "error"> </div>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="amount"><b>Total Amount</b></label></td>
+							<td><div style="display: flex;">₹<input id="demo-amount" type="text" name="amount"   data-type="currency"><button type="button" class="btn cal-btn" onclick="calculate()">Calculate</button></div>
+								<div id="demo-amount-error" class= "error"> </div>
 							</td>
 						</tr>
 						<tr>

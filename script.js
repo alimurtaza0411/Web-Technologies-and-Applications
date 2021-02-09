@@ -86,3 +86,8 @@ function prevBannar(){
     document.getElementById(ban).style.display="flex";
 
 }
+function calculate(){
+    var price = document.getElementById('demo-price').value;
+    var quantity = document.getElementById('demo-quantity').value;
+    if(price && quantity) document.getElementById('demo-amount').value = parseFloat(price)*parseInt(quantity);
+}
