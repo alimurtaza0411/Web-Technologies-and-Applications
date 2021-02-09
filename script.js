@@ -44,7 +44,16 @@ function check(f){
             }
         }
     }
-    return false;
+    if(f.id=="sign-up"){
+        window.alert("Sucess! You'r Account is ready");
+    }
+    if(f.id=='login'){
+        window.alert("Sucess! You'r succesfully Logged in");
+    }
+    if(f.id="demo"){
+        window.confirm("Do you really want to submit the product details?")
+    }
+    return true;
 }
 var endDate = new Date("Jan 01, 2022 00:00:00")
 function updateTimer(){
@@ -55,5 +64,25 @@ function updateTimer(){
     document.getElementById('min').innerHTML = Math.floor((rem  % (1000 * 60 * 60)) / (1000 * 60));
     document.getElementById('sec').innerHTML = Math.floor((rem  % (1000 * 60)) / 1000);
     setInterval(updateTimer,1000);
+
+}
+var total_bannar = 2;
+var bannar_id = 1;
+function nextBannar(){
+    var ban = "ban"+bannar_id;
+    document.getElementById(ban).style.display="none";
+    if(bannar_id==total_bannar) bannar_id=1;
+    else bannar_id+=1;
+    ban = "ban"+bannar_id;
+    document.getElementById(ban).style.display="flex";
+
+}
+function prevBannar(){
+    var ban = "ban"+bannar_id;
+    document.getElementById(ban).style.display="none";
+    if(bannar_id==1) bannar_id=total_bannar;
+    else bannar_id-=1;
+    ban = "ban"+bannar_id;
+    document.getElementById(ban).style.display="flex";
 
 }

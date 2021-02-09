@@ -165,18 +165,17 @@ input[class=log-sign]{
 .content{
 	overflow: hidden;
 }
-.bannar1{
-	height:350px;
+.ban{
+	height:400px;
 	background-color:white;
 	display:  flex;
 	flex-direction: column;
 	justify-content: center;
 }
-.bannar1 .background{
-	width: 400px;
-	height: 400px;
+.ban .background{
 	margin: auto;
 }
+
 .ban .arr{
 	position: absolute;
 	display:flex;
@@ -190,6 +189,17 @@ input[class=log-sign]{
 	color: black;
 	cursor: pointer;
 	height: fit-content;
+}
+.bannar2{
+	display: none;
+}
+.bannar1 .background{
+	width: 400px;
+	height: 400px;
+}
+.bannar2 .background{
+	height: 100%;
+	width: 900px;
 }
 
 .timer{
