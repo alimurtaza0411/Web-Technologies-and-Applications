@@ -166,7 +166,7 @@ input[class=log-sign]{
 	overflow: hidden;
 }
 .ban{
-	height:400px;
+	height:350px;
 	background-color:white;
 	display:  flex;
 	flex-direction: column;
@@ -190,17 +190,20 @@ input[class=log-sign]{
 	cursor: pointer;
 	height: fit-content;
 }
-.bannar2{
+.ban{
 	display: none;
 }
-.bannar1 .background{
-	width: 400px;
-	height: 400px;
+.bannar1{
+	display: flex;
 }
-.bannar2 .background{
+.ban .background{
 	height: 100%;
-	width: 900px;
+	width:100%;
 }
+.bannar1 .background{
+	max-height: 65%;
+}
+
 
 .timer{
 	width: 30%;
@@ -387,6 +390,9 @@ textarea{
 }
 .products{
 	width: 100%;
+}
+.ban{
+	height: 300px;
 }
 }
 @media screen and (max-width: 450px){

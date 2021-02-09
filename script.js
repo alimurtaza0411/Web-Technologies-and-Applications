@@ -50,7 +50,7 @@ function check(f){
     if(f.id=='login'){
         window.alert("Sucess! You'r succesfully Logged in");
     }
-    if(f.id="demo"){
+    if(f.id=="demo"){
         window.confirm("Do you really want to submit the product details?")
     }
     return true;
@@ -66,7 +66,7 @@ function updateTimer(){
     setInterval(updateTimer,1000);
 
 }
-var total_bannar = 2;
+var total_bannar = 3;
 var bannar_id = 1;
 function nextBannar(){
     var ban = "ban"+bannar_id;
