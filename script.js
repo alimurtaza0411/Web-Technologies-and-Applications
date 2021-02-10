@@ -66,6 +66,10 @@ function updateTimer(){
     setInterval(updateTimer,1000);
 
 }
+function start(){
+    checkCookie();
+    updateTimer();
+}
 var total_bannar = 3;
 var bannar_id = 1;
 function nextBannar(){
@@ -91,3 +95,38 @@ function calculate(){
     var quantity = document.getElementById('demo-quantity').value;
     if(price && quantity) document.getElementById('demo-amount').value = parseFloat(price)*parseInt(quantity);
 }
+
+function setCookie(name,value,exd) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exd*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+  }
+  
+  function getCookie(name) {
+    name += "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var cookie = decodedCookie.split(';');
+    for(var i = 0; i < cookie.length; i++) {
+      var c = cookie[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  
+  function checkCookie() {
+    var user=getCookie("Name");
+    if (user != "") {
+      alert("Welcome " + user);
+    } else {
+       user = prompt("Please enter your name:","");
+       if (user != "" && user != null) {
+         setCookie("Name", user, 30);
+       }
+    }
+  }
