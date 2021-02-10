@@ -126,7 +126,7 @@ function setCookie(name,value,exd) {
     } else {
        user = prompt("Please enter your name:","");
        if (user != "" && user != null) {
-         setCookie("Name", user, 30);
+         setCookie("Name", user, 1);
        }
     }
   }
