@@ -13,7 +13,7 @@ function check(f){
             el.style.borderColor="white";
         }
         if(el.name=="email"){
-            var regexp = new RegExp("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+$");
+            var regexp = new RegExp("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$");
             if(!regexp.test(el.value)){
                 el.style.borderColor = "red";
                 document.getElementById(err).innerHTML = "Invalid Email"
@@ -35,7 +35,7 @@ function check(f){
                 return false;
             }
         }
-        if(el.name=="price"){
+        if(el.name=="price" || el.name=="amount"){
             var regexp = new RegExp("^[0-9]*$");
             if(!regexp.test(el.value)){
                 el.style.borderColor = "red";
